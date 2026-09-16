@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="500" y="50" text-anchor="middle" font-family="Arial" font-size="28" font-weight="bold">OptiView - Contratos versionados</text>
+<rect x="65" y="135" width="230" height="80" rx="12" fill="#eef4ff" stroke="#333" stroke-width="2"/>
+<text x="180" y="183" text-anchor="middle" font-family="Arial" font-size="20">Consumer</text>
+<rect x="385" y="115" width="230" height="120" rx="12" fill="#f7f7f7" stroke="#333" stroke-width="2"/>
+<text x="500" y="155" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">Contrato v1</text>
+<text x="500" y="190" text-anchor="middle" font-family="Arial" font-size="16">OpenAPI / .proto</text>
+<text x="500" y="215" text-anchor="middle" font-family="Arial" font-size="16">Event Schema</text>
+<rect x="705" y="135" width="230" height="80" rx="12" fill="#eef4ff" stroke="#333" stroke-width="2"/>
+<text x="820" y="183" text-anchor="middle" font-family="Arial" font-size="20">Producer</text>
+<line x1="295" y1="175" x2="385" y2="175" stroke="#333" stroke-width="3"/>
+<line x1="615" y1="175" x2="705" y2="175" stroke="#333" stroke-width="3"/>
+<rect x="120" y="330" width="300" height="105" rx="12" fill="#f7f7f7" stroke="#555" stroke-width="2"/>
+<text x="270" y="365" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Cambio compatible</text>
+<text x="270" y="400" text-anchor="middle" font-family="Arial" font-size="16">Agregar campo opcional</text>
+<rect x="580" y="330" width="300" height="105" rx="12" fill="#f7f7f7" stroke="#555" stroke-width="2"/>
+<text x="730" y="365" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Breaking change</text>
+<text x="730" y="398" text-anchor="middle" font-family="Arial" font-size="16">Eliminar / renombrar / cambiar tipo</text>
+<text x="730" y="423" text-anchor="middle" font-family="Arial" font-size="16">→ nueva versión</text>
+<text x="500" y="495" text-anchor="middle" font-family="Arial" font-size="17">Consumer-driven contract test → verificación del Producer en CI</text>
+</svg>
