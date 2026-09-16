@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520">
+<rect width="100%" height="100%" fill="white"/>
+<text x="550" y="48" text-anchor="middle" font-family="Arial" font-size="28" font-weight="bold">OptiView - Flujo Scrum y DevOps</text>
+<g fill="#eef4ff" stroke="#333" stroke-width="2">
+<rect x="40" y="130" width="180" height="75" rx="12"/><rect x="270" y="130" width="180" height="75" rx="12"/>
+<rect x="500" y="130" width="180" height="75" rx="12"/><rect x="730" y="130" width="180" height="75" rx="12"/>
+</g>
+<g font-family="Arial" font-size="18" text-anchor="middle">
+<text x="130" y="175">Product Backlog</text><text x="360" y="175">Sprint Backlog</text>
+<text x="590" y="175">Sprint</text><text x="820" y="175">Incremento</text>
+</g>
+<g stroke="#333" stroke-width="3"><line x1="220" y1="168" x2="270" y2="168"/><line x1="450" y1="168" x2="500" y2="168"/><line x1="680" y1="168" x2="730" y2="168"/></g>
+<rect x="380" y="285" width="340" height="80" rx="12" fill="#f7f7f7" stroke="#333" stroke-width="2"/>
+<text x="550" y="320" text-anchor="middle" font-family="Arial" font-size="19" font-weight="bold">Review + Retrospective</text>
+<text x="550" y="348" text-anchor="middle" font-family="Arial" font-size="16">Feedback para el siguiente Sprint</text>
+<path d="M820 205 C820 260 720 285 690 285" fill="none" stroke="#333" stroke-width="3"/>
+<path d="M410 365 C250 420 125 350 130 205" fill="none" stroke="#333" stroke-width="3"/>
+<text x="550" y="430" text-anchor="middle" font-family="Arial" font-size="18">WIP limitado · PR por cambio · CI/CD · Lead time · Cycle time · Throughput</text>
+<text x="550" y="470" text-anchor="middle" font-family="Arial" font-size="17">Plan → Build → Test → Release → Deploy → Operate → Monitor → Feedback</text>
+</svg>
