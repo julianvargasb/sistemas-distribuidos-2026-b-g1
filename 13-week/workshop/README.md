@@ -10,7 +10,8 @@
 - REFLECTION_DOC: PENDING
 - LIBRARY_BOOK: PENDING
 - LIBRARY_RECORD_TIME: PENDING
-- STORIES: PENDING
+- STORIES: https://github.com/code-corhuila/opti-docs/issues/45, https://github.com/code-corhuila/opti-docs/issues/46, https://github.com/code-corhuila/opti-docs/issues/47
+
 <!-- CONFIG-END -->
 
 ## Scope
