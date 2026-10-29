@@ -1,93 +1,41 @@
 
-# OptiView — Security Test Execution Guide
+## 7. Verification Status
 
-## 1. Objective
+**Execution date:** October 28, 2026, 22:50 (Colombia, UTC-5).
 
-Document the proposed security checks for the OptiView distributed system, focusing on the trust boundary between opti-api-gateway and opti-sales-api.
+**Environment:**
+- Operating system: Windows 11
+- Java: Eclipse Temurin JDK 21.0.12.1
+- Maven: Apache Maven 3.9.16
+- Service: opti-sales-api
+- Module: sales-adapters
 
-The main objective is to verify that unauthorized users cannot access confidential seller-sales reports.
-
-## 2. Related Security Story
-
-- Issue: https://github.com/code-corhuila/opti-docs/issues/45
-- STRIDE category: E — Elevation of Privilege
-- Risk score: 6
-- Priority: P1
-
-### Acceptance Criterion
-
-An unauthorized caller without the required SERVICE role must not access the restricted seller-sales report.
-
-## 3. Real Service and Endpoint
-
-Service: opti-sales-api
-
-Endpoint:
-
-GET /api/v1/reports/seller-sales
-
-Required role: SERVICE
-
-The ReportsController checks the caller's role before retrieving seller-sales information.
-
-## 4. Negative Authorization Test
-
-Test class:
-
-SalesReportAuthorizationTest.java
-
-Test method:
-
-sellerSalesRejectsCallerWithoutServiceRole
-
-The test creates a request without an authenticated SERVICE role and invokes the report controller.
-
-Expected result:
-
-- The controller rejects the request with ErrorCode.FORBIDDEN.
-- No report data is retrieved.
-- The ReportUseCases dependency is not invoked.
-
-The corresponding HTTP 403 response must be verified separately at the HTTP layer.
-
-## 5. Local Execution
-
-Prerequisites:
-
-- Java 21
-- Maven
-- Access to the real opti-sales-api repository
-
-Place SalesReportAuthorizationTest.java in:
-
-sales-adapters/src/test/java/co/edu/corhuila/opti/sales/adapter/in/http/
-
-From the root directory of opti-sales-api, execute:
+**Executed command:**
 
 ```bash
 mvn -pl sales-adapters -am -Dtest=SalesReportAuthorizationTest -Dsurefire.failIfNoSpecifiedTests=false test
 ```
 
-Review the Maven output to determine whether the test passed.
+**Actual console output:**
 
-## 6. Proposed CI Security Gates
+```text
+[INFO] Running co.edu.corhuila.opti.sales.adapter.in.http.SalesReportAuthorizationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] Reactor Summary for opti-sales-api 1.0.0:
+[INFO] opti-sales-api ..................................... SUCCESS
+[INFO] sales-core ......................................... SUCCESS
+[INFO] sales-adapters ..................................... SUCCESS
+[INFO] BUILD SUCCESS
+[INFO] Total time: 22.495 s
+[INFO] Finished at: 2026-10-28T22:50:25-05:00
+```
 
-The security.yml file defines three proposed checks:
+**Security conclusion:**
 
-1. Secret scanning using Gitleaks.
-2. Dependency vulnerability auditing using OWASP Dependency-Check.
-3. Negative authorization testing with Maven.
+The negative authorization unit test passed against the real opti-sales-api source code.
 
-The workflow is currently documented in the workshop folder as a proposal.
+The test confirms that a request without the required SERVICE role produces ErrorCode.FORBIDDEN before the controller invokes the report use case.
 
-To execute it automatically, it must be adapted and installed in the real application's .github/workflows directory.
+This provides automated evidence for the authorization control described in security Issue #45.
 
-## 7. Verification Status
-
-- Security workflow documented: Yes.
-- Negative authorization test written: Yes.
-- Test executed successfully: Not yet verified.
-- Real console output: Pending.
-- GitHub Actions execution URL: Pending.
-
-No successful execution is claimed until actual test results are available.
+The HTTP 403 response and the GitHub Actions pipeline have not yet been executed or independently verified.
