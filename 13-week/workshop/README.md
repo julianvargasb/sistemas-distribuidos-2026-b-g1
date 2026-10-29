@@ -9,8 +9,8 @@
 - BOUNDARY: opti-api-gateway to opti-sales-api
 - CLAIM_ISSUE: https://github.com/code-corhuila/opti-docs/issues/37
 - REFLECTION_DOC:https://docs.google.com/document/d/1s9YUMq-EmfB-ChGNWzixQbkq3tAu1_oV_UjB11oNQSI/edit?usp=sharing
-- LIBRARY_BOOK: PENDING
-- LIBRARY_RECORD_TIME: PENDING
+- LIBRARY_BOOK: Hacking y seguridad en internet, 2nd edition. Physical book registered at CORHUILA Library using my student ID. Call number and consulted pages pending verification.
+- LIBRARY_RECORD_TIME: 2026-10-28, approximately 18:38–18:40 (Colombia time). Exact time subject to library record verification.
 - STORIES: https://github.com/code-corhuila/opti-docs/issues/45, https://github.com/code-corhuila/opti-docs/issues/46, https://github.com/code-corhuila/opti-docs/issues/47
 <!-- CONFIG-END -->
 
