@@ -8,7 +8,7 @@
 - DOCS_REPO: https://github.com/code-corhuila/opti-docs
 - BOUNDARY: opti-api-gateway to opti-sales-api
 - CLAIM_ISSUE: https://github.com/code-corhuila/opti-docs/issues/37
-- REFLECTION_DOC: https://github.com/julianvargasb/sistemas-distribuidos-2026-b-g1/blob/main/13-week/workshop/05-security-reflection.md
+- REFLECTION_DOC:https://docs.google.com/document/d/1s9YUMq-EmfB-ChGNWzixQbkq3tAu1_oV_UjB11oNQSI/edit?usp=sharing
 - LIBRARY_BOOK: PENDING
 - LIBRARY_RECORD_TIME: PENDING
 - STORIES: https://github.com/code-corhuila/opti-docs/issues/45, https://github.com/code-corhuila/opti-docs/issues/46, https://github.com/code-corhuila/opti-docs/issues/47
