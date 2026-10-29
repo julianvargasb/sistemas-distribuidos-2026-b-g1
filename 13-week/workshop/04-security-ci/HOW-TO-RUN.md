@@ -68,3 +68,33 @@ This validation confirms YAML syntax only. It does not prove that GitHub Actions
 
 The proposed security workflow passed YAML syntax validation. The negative authorization unit test was independently executed and passed locally.
 
+
+
+## 8. Security Workflow YAML Validation
+
+**File:** 13-week/workshop/04-security-ci/security.yml
+
+**Validation tool:** YAML Lint (https://www.yamllint.com/)
+
+**Validation result:** Valid YAML
+
+**Verification performed:**
+
+The complete security.yml content was copied from the OptiView workshop repository and submitted to the YAML Lint validator.
+
+The validator returned the message "Valid YAML", confirming that the file has valid YAML syntax.
+
+**Security controls defined in the workflow:**
+
+1. Secret scanning using Gitleaks.
+2. Dependency vulnerability auditing using OWASP Dependency-Check.
+3. Negative authorization testing using Maven and JUnit.
+
+**Limitations:**
+
+This validation confirms YAML syntax only. It does not prove that GitHub Actions executed successfully or that the three security gates passed.
+
+**Conclusion:**
+
+The proposed security workflow passed YAML syntax validation. The negative authorization unit test was independently executed and passed locally.
+
