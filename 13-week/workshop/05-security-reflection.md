@@ -108,3 +108,20 @@ https://github.com/julianvargasb/sistemas-distribuidos-2026-b-g1/blob/main/13-we
 **Peer review:**
 
 https://github.com/code-corhuila/opti-docs/pull/32
+
+
+## CP3 — Security Backlog Reflection
+
+I learned that identifying security threats is not enough. Each important threat must become a security user story with clear acceptance criteria, an assigned priority, and automated tests.
+
+In OptiView, I created three security issues (#45, #46, and #47) based on the STRIDE analysis of the communication between `opti-api-gateway` and `opti-sales-api`. These stories address Elevation of Privilege, Tampering, and Information Disclosure, each with a risk score of 6 and priority P1.
+
+The first improvement I would prioritize is verifying that `GET /api/v1/reports/seller-sales` rejects requests without the required `SERVICE` role. The local authorization unit test passed, but HTTP integration testing is still needed to verify the expected 401 and 403 responses.
+
+The main challenge is completing the integration tests and connecting the three issues to the team's GitHub Project backlog. The physical library citation also remains pending verification.
+
+**Evidence:**
+- Issue #45: https://github.com/code-corhuila/opti-docs/issues/45
+- Issue #46: https://github.com/code-corhuila/opti-docs/issues/46
+- Issue #47: https://github.com/code-corhuila/opti-docs/issues/47
+- STRIDE Pull Request #44: https://github.com/code-corhuila/opti-docs/pull/44
