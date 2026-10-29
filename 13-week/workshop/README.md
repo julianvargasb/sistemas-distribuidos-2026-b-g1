@@ -1,6 +1,6 @@
 # Week 13 — Threat Modeling Workshop
 
-&lt;!-- CONFIG-START --&gt;
+<!-- CONFIG-START -->
 - FULL_NAME: Wilkyn Julian Vargas Bahamón
 - GITHUB_USER: julianvargasb
 - TEAM: The illusionists
@@ -11,7 +11,7 @@
 - LIBRARY_BOOK: PENDING
 - LIBRARY_RECORD_TIME: PENDING
 - STORIES: PENDING
-&lt;!-- CONFIG-END --&gt;
+<!-- CONFIG-END -->
 
 ## Scope
 
