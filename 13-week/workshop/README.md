@@ -39,15 +39,51 @@ The STRIDE methodology was applied to analyze six security threat categories:
 
 The security analysis is documented in Pull Request #44.
 
+
 ## 3. Security Backlog
 
-Three security issues were created in the team documentation repository.
+Three security stories were created and refined in the OptiView
+team documentation repository.
 
-- Issue #45: Restrict seller-sales reports to SERVICE role.
-- Issue #46: Validate sales reporting filters and seller identifiers.
-- Issue #47: Prevent unauthorized disclosure of sales reports.
+### Issue #45 - Elevation of Privilege
 
-These issues describe security risks and their corresponding acceptance criteria.
+Restrict seller-sales reporting to the SERVICE role.
+
+- STRIDE: E - Elevation of Privilege
+- Risk score: 6
+- Priority: P1
+- Acceptance criteria: authentication, role restrictions, and automated
+  negative authorization testing.
+
+### Issue #46 - Tampering
+
+Validate sales reporting filters and seller identifiers.
+
+- STRIDE: T - Tampering
+- Risk score: 6
+- Priority: P1
+- Acceptance criteria: invalid input rejection, restricted data access,
+  and automated validation tests.
+
+### Issue #47 - Information Disclosure
+
+Prevent unauthorized disclosure of confidential sales reports.
+
+- STRIDE: I - Information Disclosure
+- Risk score: 6
+- Priority: P1
+- Acceptance criteria: HTTP 401/403 verification, confidential data
+  protection, and automated negative authorization testing.
+
+All three stories reference STRIDE Pull Request #44 and are labeled
+security and P1.
+
+The automated authorization test has passed locally. HTTP integration
+tests and execution of the complete CI workflow remain pending.
+
+The physical library citation requires verification of the book's
+publication details, library call number, and consulted pages.
+
 
 ## 4. Security Testing
 
