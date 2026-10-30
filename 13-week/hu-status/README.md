@@ -20,10 +20,14 @@
 | W13-CP0 | Claim the gateway-to-sales trust boundary | done | https://github.com/code-corhuila/opti-docs/issues/37 |
 | W13-CP1 | Document attack surface and trust boundaries | done | https://github.com/julianvargasb/sistemas-distribuidos-2026-b-g1/blob/main/13-week/workshop/01-attack-surface.md |
 | W13-CP2 | Document six STRIDE security threats | done | https://github.com/code-corhuila/opti-docs/pull/44 |
-| W13-CP3 | Create three risk-based security backlog stories | done | https://github.com/code-corhuila/opti-docs/issues/45 |
+| W13-CP3 | Create three risk-based security backlog stories | doing | https://github.com/code-corhuila/opti-docs/issues/45 |
 | W13-CP4 | Propose security CI and create an authorization test | done | https://github.com/julianvargasb/sistemas-distribuidos-2026-b-g1/blob/main/13-week/workshop/04-security-ci/HOW-TO-RUN.md |
 | W13-CP5 | Review a peer's STRIDE threat model | done | https://github.com/code-corhuila/opti-docs/pull/32 |
+| W13-CP6 | Address peer feedback and refine STRIDE analysis | done | https://github.com/code-corhuila/opti-docs/pull/44#issuecomment-6512085790 |
+| W13-CP7 | Refine security backlog stories and acceptance criteria | doing | https://github.com/code-corhuila/opti-docs/issues/45 |
 | W13-CP8 | Execute the negative authorization test and validate YAML syntax | done | https://github.com/julianvargasb/sistemas-distribuidos-2026-b-g1/blob/main/13-week/workshop/04-security-ci/HOW-TO-RUN.md |
+| W13-CP9 | Document the security implementation plan and final reflection | done | https://github.com/julianvargasb/sistemas-distribuidos-2026-b-g1/blob/main/13-week/workshop/05-security-reflection.md |
+
 
 ## 2. My individual contribution
 
@@ -64,7 +68,7 @@ https://github.com/code-corhuila/opti-docs/pull/44
 
 ### 2.3 Security backlog
 
-I created three security issues in the team documentation repository.
+The three security issues have been created, prioritized, and documented with testable acceptance criteria. Their association with the team's GitHub Project Backlog remains pending.
 
 **Issue #45 - Elevation of Privilege**
 
@@ -86,7 +90,7 @@ https://github.com/code-corhuila/opti-docs/issues/47
 
 These issues document security improvements and testable acceptance criteria for the OptiView project.
 
-The issues were also linked to the team project board.
+The three issues have not yet been linked to the team GitHub Project board. This remaining step is tracked as pending and is not claimed as completed.
 
 ### 2.4 Security CI proposal
 
@@ -177,12 +181,11 @@ The technical review was submitted in English through GitHub.
 
 The following activities still require attention:
 
-- Complete and verify the physical library book reference, including the publication year, library call number, page references, and registration time.
-- Add the final reflection document and its link to the workshop configuration.
 - Verify the status of Pull Request #44 and address any requested changes.
 - The proposed GitHub Actions workflow has not been executed automatically in the real service repository.
 - The current authorization unit test does not independently verify the HTTP 403 response through an integration test.
-- Complete the remaining workshop checkpoints and final delivery requirements.
+- Link Issues #45, #46 and #47 to the official team GitHub Project backlog when access is confirmed.
+- Submit the workshop evidence and final commit URL to Moodle.
 
 No successful CI execution is claimed without corresponding GitHub Actions logs.
 
@@ -193,7 +196,7 @@ No successful CI execution is claimed without corresponding GitHub Actions logs.
 - Propose additional HTTP-level authorization tests.
 - Coordinate integration of security checks into the real service CI pipeline.
 - Maintain the security backlog and its acceptance criteria.
-- Complete missing references and reflection evidence required by the workshop.
+- Complete the pending GitHub Project board association and submit the final workshop links to Moodle.
 - Continue supporting the HU-24 sales reporting functionality.
 
 ## 5. Compliance self-check
@@ -208,8 +211,10 @@ No successful CI execution is claimed without corresponding GitHub Actions logs.
 - [x] Peer Pull Request reviewed
 - [x] YAML syntax validated
 - [ ] GitHub Actions security workflow executed successfully
-- [ ] Physical library evidence completed
-- [ ] Final reflection document linked
+- [x] Physical library reference documented in the security reflection
+- [x] Final reflection and implementation plan linked
+- [ ] Security issues linked to the official team project board
+- [ ] Final workshop submission recorded in Moodle
 
 ## 6. Evidence links
 
@@ -257,14 +262,28 @@ https://github.com/julianvargasb/sistemas-distribuidos-2026-b-g1/blob/main/13-we
 
 https://github.com/code-corhuila/opti-docs/pull/32
 
+### CP6 - STRIDE review follow-up
+
+https://github.com/code-corhuila/opti-docs/pull/44#issuecomment-6512085790
+
+### CP7 - Security backlog refinement
+
+https://github.com/code-corhuila/opti-docs/issues/45
+
+https://github.com/code-corhuila/opti-docs/issues/46
+
+https://github.com/code-corhuila/opti-docs/issues/47
+
 ### Workshop configuration
 
 https://github.com/julianvargasb/sistemas-distribuidos-2026-b-g1/blob/main/13-week/workshop/README.md
 
 ### Reflection document
 
-PENDING - Final reflection link not yet registered.
+Completed - The final security reflection includes the OptiView implementation plan, sprint priorities, residual risk, and lessons learned.
+
+https://github.com/julianvargasb/sistemas-distribuidos-2026-b-g1/blob/main/13-week/workshop/05-security-reflection.md
 
 ### Physical library reference
 
-PENDING - Complete bibliographic verification required.
+Documented in the security reflection: García-Morán et al., *Hacking y seguridad en internet*, 2nd edition, Ra-Ma / Ediciones de la U, 2013. ISBN 978-958-762-080-1. Physical library call number: `005.8 / G216h / Ej.1`. Pages 317 (input validation) and 321 (security-relevant records and auditing).
