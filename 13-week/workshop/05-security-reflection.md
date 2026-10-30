@@ -125,3 +125,22 @@ The main challenge is completing the integration tests and connecting the three 
 - Issue #46: https://github.com/code-corhuila/opti-docs/issues/46
 - Issue #47: https://github.com/code-corhuila/opti-docs/issues/47
 - STRIDE Pull Request #44: https://github.com/code-corhuila/opti-docs/pull/44
+## Implementation plan for my project
+
+My implementation plan for OptiView focuses on reducing the main security risks identified between `opti-api-gateway` and `opti-sales-api`. The analysis concerns the `GET /api/v1/reports/seller-sales` endpoint associated with HU-24. The three security stories created during this workshop address Elevation of Privilege (Issue #45), Tampering (Issue #46), and Information Disclosure (Issue #47). Each has a risk score of 6 and priority P1.
+
+**In the next sprint**, I would prioritize Issue #45 by verifying that only callers with the `SERVICE` role can access seller-sales reports. I would implement HTTP integration tests to confirm that unauthenticated requests receive HTTP 401 and authenticated callers without the required role receive HTTP 403. I would also verify that the reporting use case is not executed when authorization fails and that legitimate `SERVICE` requests continue working.
+
+The local negative authorization test already passed using Maven and JUnit, with one test executed, zero failures, and `BUILD SUCCESS`. However, this result does not demonstrate the behavior of a running API gateway. For that reason, HTTP integration testing would be my first implementation priority.
+
+During the same sprint, I would address Issue #47 by verifying that unauthorized responses do not expose confidential sales totals, seller details, or report information. These checks would become automated regression tests.
+
+**In the following sprint**, I would work on Issue #46, validating the `sellerId`, `from`, and `to` parameters. The implementation should reject malformed identifiers, invalid date values, and unexpected query parameters before processing a report request.
+
+I would also coordinate the integration of Gitleaks, OWASP Dependency-Check, and Maven/JUnit into the real service's CI pipeline. Although the proposed `security.yml` passed YAML syntax validation, its successful execution through GitHub Actions has not yet been verified.
+
+**The residual risk I accept temporarily** is that the successful local unit test does not prove the complete deployed authorization flow. This risk must be reviewed before release and reduced through HTTP integration tests and successful CI execution.
+
+From the physical book *Hacking y seguridad en internet*, second edition, by García-Morán and collaborators, I learned the importance of validating application inputs, as discussed on page 317, and reviewing records to investigate security-relevant activity, as discussed on page 321. These principles helped me understand why prevention, traceability, and verification are essential in a distributed system.
+
+This workshop taught me that identifying a vulnerability is only the beginning. A security improvement becomes meaningful when it has a clear implementation plan, measurable acceptance criteria, and reproducible evidence that the control works.
