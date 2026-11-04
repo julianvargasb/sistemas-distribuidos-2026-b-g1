@@ -15,12 +15,14 @@
 | Start date | Pending enrollment |
 | Completion date | Pending completion |
 
+
 ## Study log
 
 | Date | Hours | Chapters or labs | Evidence file |
-|---|---|---|---|
+|---|---:|---|---|
+| Not started | 0 | Pending enrollment | Not available |
+| **Total** | **0** | | |
 
-| Total | 0 | | |
 
 ## Labs
 
