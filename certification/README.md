@@ -1,17 +1,15 @@
-# Certification C3 — <Full name>
-
-> Template of the corte 3 certification. Replace every `<...>` with your data and delete this note. The rules are in the guide attached to the c3-certification activity in Moodle. Text left as `<...>` counts as missing.
+# Certification C3 — Wilkyn Julián Vargas Bahamón
 
 ## Cover
 
 | Field | Value |
 |---|---|
-| Full name | <Full name exactly as in Moodle> |
-| GitHub user | <github-user> |
-| Group | <G1 or G2> |
-| Team | <Team name> |
-| Team -docs repository | <https://github.com/code-corhuila/...-docs> |
-| Course | <Exact course name> |
+| Full name | Wilkyn Julián Vargas Bahamón |
+| GitHub user | julianvargasb |
+| Group | G1 |
+| Team | The illusionists |
+| Team -docs repository | https://github.com/code-corhuila/opti-docs |
+| Course | Pending official confirmation |
 | Course link | <Course URL> |
 | Start date | <YYYY-MM-DD> |
 | Completion date | <YYYY-MM-DD> |
