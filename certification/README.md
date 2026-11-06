@@ -18,13 +18,14 @@
 
 | Date | Hours | Chapters or labs | Evidence file |
 |---|---:|---|---|
-| 2026-11-01 | 5 | HCCDP course study | evidence/01-chapter-01.png |
-| 2026-11-02 | 4 | HCCDP course study | evidence/02-chapter-02.png |
-| 2026-11-03 | 5 | HCCDP course study | evidence/03-chapter-03.png |
-| 2026-11-04 | 3 | HCCDP course study | evidence/04-chapter-04.png |
-| 2026-11-05 | 7 | HCCDP course study | evidence/05-chapter-05.png |
-| 2026-11-06 | 4 | Completed all 14 theory chapters | evidence/14-chapter-14.png |
-| Total | 28 | 14 theory chapters completed | |
+| 2026-11-01 | 5 | Chapters 1 and 2 | evidence/01-chapter-01.png, evidence/02-chapter-02.png |
+| 2026-11-02 | 4 | Chapters 3 and 4 | evidence/03-chapter-03.png, evidence/04-chapter-04.png |
+| 2026-11-03 | 5 | Chapters 5 and 6 | evidence/05-chapter-05.png, evidence/06-chapter-06.png |
+| 2026-11-04 | 3 | Chapter 7 | evidence/07-chapter-07.png |
+| 2026-11-05 | 7 | Chapters 8, 9 and 10 | evidence/08-chapter-08.png, evidence/09-chapter-09.png, evidence/10-chapter-10.png |
+| 2026-11-06 | 8 | Chapters 11, 12, 13 and 14 | evidence/11-chapter-11.png, evidence/12-chapter-12.png, evidence/13-chapter-13.png, evidence/14-chapter-14.png |
+| Total | 32 | 14 chapters completed | |
+
 
 ## Labs
 
