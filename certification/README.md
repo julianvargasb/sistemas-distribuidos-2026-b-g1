@@ -12,7 +12,7 @@
 | Course | HCCDP-Solution Architectures Course|
 | Course link | https://e.huawei.com/en/talent/outPage/#/sxz-course/home?courseId=I4bs1u--tD4kL8Fg3clrbgvqnhA |
 | Start date | 2026-11-01 |
-| Completion date | <YYYY-MM-DD> |
+| Completion date | 2026-11-15 |
 
 ## Study log
 
@@ -31,17 +31,22 @@
 
 | Evidence file | Lab name | What I built | What failed first and how I fixed it |
 |---|---|---|---|
-| evidence/15-lab-1.png | <Lab name> | <One sentence> | <One sentence> |
-| evidence/16-lab-2.png | <Lab name> | <One sentence> | <One sentence> |
-| evidence/17-lab-3.png | <Lab name> | <One sentence> | <One sentence> |
-| evidence/18-lab-4.png | <Lab name> | <One sentence> | <One sentence> |
+| evidence/15-lab-1.png | High-Performance Network Solution | Configured Huawei Cloud networking resources and tested connectivity using ECS and VPC. | Initially, I encountered access and configuration issues in the lab environment. I reviewed the connection settings, verified the assigned resources, and repeated the network connectivity tests. |
+| evidence/16-lab-2.png | Highly Reliable Database Solution | Configured database resources and verified access to the Discuz! application. | Initially, I received an `Access denied` error when connecting to MySQL. I reviewed the database credentials and connection parameters before continuing with the application verification. |
+| evidence/17-lab-3.png | Design Cases and Practices of an O&M Solution | Explored Huawei Cloud Log Tank Service (LTS), including monitoring and alarm management. | Initially, I encountered access and configuration issues in the lab environment. I reviewed the assigned resources and monitoring settings, then repeated the verification process. |
+| evidence/18-lab-4.png | Cloud Computing and Storage | Used Huawei Cloud ECS and Linux commands to inspect cloud storage resources. | Initially, I encountered access and configuration issues in the lab environment. I checked the resource configuration and verified the storage environment using Linux commands. |
 
 ## Final exam
 
-- Score: <score>
-- Date: <YYYY-MM-DD>
-- Evidence: evidence/19-final-exam.png
+- Score: **82/100 (Passed)**
+- Date: **2026-11-15**
+- Evidence: [evidence/19-exam-result.png](evidence/19-exam-result.png)
 
 ## Skills summary
 
-<5 to 7 lines in English, first person, naming at least three concrete design techniques from the course.>
+Through the HCCDP – Solution Architectures course, I strengthened my knowledge of cloud architecture design using Huawei Cloud services.
+I learned to apply **high availability design** by distributing critical services across multiple availability zones.
+I explored **horizontal scaling and load balancing** to improve application performance and resource efficiency.
+I studied **disaster recovery strategies**, including database replication, backup planning, and RTO/RPO objectives.
+I developed a better understanding of **automated deployment and infrastructure management** for distributed applications.
+I can apply these design techniques to improve the scalability, reliability, and security of our OptiView project.
